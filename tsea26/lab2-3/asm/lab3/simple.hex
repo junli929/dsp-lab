@@ -1,0 +1,19 @@
+; Senior assembler (V2015-TSEA26-02)
+code
+02000000 2 simple.asm
+02021111 3 simple.asm
+02042222 4 simple.asm
+02063333 5 simple.asm
+02084444 6 simple.asm
+81000000 7 simple.asm
+81000000 8 simple.asm
+81000000 9 simple.asm
+04c00011 10 simple.asm
+04c20011 11 simple.asm
+04c40011 12 simple.asm
+04c60011 13 simple.asm
+04c80011 14 simple.asm
+04c00012 15 simple.asm
+rom0
+org 32768
+00000500

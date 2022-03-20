@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : mac_dp
+Version: P-2019.03-SP5
+Date   : Thu Feb 24 11:58:10 2022
+****************************************
+
+Library(s) Used:
+
+    CORE65LPLVT (File: /sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db)
+
+Number of ports:                          168
+Number of nets:                          2055
+Number of cells:                         1859
+Number of combinational cells:           1825
+Number of sequential cells:                34
+Number of macros/black boxes:               0
+Number of buf/inv:                        348
+Number of references:                     193
+
+Combinational area:               8498.879931
+Buf/Inv area:                      919.879978
+Noncombinational area:             280.280005
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  8779.159937
+Total area:                 undefined
+1

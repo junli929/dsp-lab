@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+        -verbose
+Design : mac_dp
+Version: P-2019.03-SP5
+Date   : Thu Feb 24 11:58:10 2022
+****************************************
+
+
+Library(s) Used:
+
+    CORE65LPLVT (File: /sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db)
+
+
+Operating Conditions: nom_1.20V_25C   Library: CORE65LPLVT
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mac_dp                 area_8Kto9K       CORE65LPLVT
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1mW
+
+
+  Cell Internal Power  =   1.1264 mW   (49%)
+  Net Switching Power  =   1.1681 mW   (51%)
+                         ---------
+Total Dynamic Power    =   2.2945 mW  (100%)
+
+Cell Leakage Power     =  11.1139 uW
+
+                 Internal         Switching           Leakage            Total                         Cell
+Power Group      Power            Power               Power              Power   (   %    )  Attrs  Count
+---------------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+register           0.2079        3.0915e-02        2.5132e-04            0.2390  (  10.37%)            34
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)            0
+combinational      0.9186            1.1372        1.0863e-02            2.0666  (  89.63%)            1825
+---------------------------------------------------------------------------------------------------------
+Total              1.1264 mW         1.1681 mW     1.1114e-02 mW         2.3056 mW
+1

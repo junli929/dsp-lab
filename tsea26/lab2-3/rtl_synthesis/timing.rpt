@@ -1,0 +1,2157 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1000
+Design : mac_dp
+Version: P-2019.03-SP5
+Date   : Thu Feb 24 11:58:10 2022
+****************************************
+
+Operating Conditions: nom_1.20V_25C   Library: CORE65LPLVT
+Wire Load Model Mode: enclosed
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[8]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1453/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2074/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1574/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[8] (out)                                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[11]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1453/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2080/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1576/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[11] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[27]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1453/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2117/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1575/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[27] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[26]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1453/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2103/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1578/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[26] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[25]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1453/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2098/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1582/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[25] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[22]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1453/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2120/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1580/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[22] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[29]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1452/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2113/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1590/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[29] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[16]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1452/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2090/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1587/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[16] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[9]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1452/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2075/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1589/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[9] (out)                                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[10]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1452/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2078/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1585/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[10] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[6]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1452/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2071/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1586/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[6] (out)                                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[0]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1452/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U2115/Z (HS65_LL_NAND2X5)                               0.02       0.67 f
+  U1591/Z (HS65_LL_NAND2X5)                               0.01       0.69 r
+  mac_result[0] (out)                                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[30]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U1592/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[30] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[24]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U2143/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[24] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[20]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U2140/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[20] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[19]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U2136/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[19] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[18]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U2133/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[18] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[17]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U2128/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[17] (out)                                    0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[5]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U2124/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[5] (out)                                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[4]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U2066/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[4] (out)                                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[2]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U1588/Z (HS65_LL_NAND2X5)                               0.02       0.69 r
+  mac_result[2] (out)                                     0.00       0.69 r
+  data arrival time                                                  0.69
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.69
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.09
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: sat_flag (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U518/Z (HS65_LL_IVX35)                                  0.02       0.67 f
+  U2161/Z (HS65_LL_NAND2X5)                               0.01       0.68 r
+  sat_flag (out)                                          0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[28]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1583/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[28] (out)                                    0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[23]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1579/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[23] (out)                                    0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[21]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1573/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[21] (out)                                    0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[15]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1570/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[15] (out)                                    0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[14]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1581/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[14] (out)                                    0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[13]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1577/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[13] (out)                                    0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[12]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1572/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[12] (out)                                    0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[3]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1584/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[3] (out)                                     0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[1]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U545/Z (HS65_LL_IVX18)                                  0.02       0.56 r
+  U2044/Z (HS65_LL_NAND2AX29)                             0.02       0.58 f
+  U2058/Z (HS65_LL_NAND2AX21)                             0.05       0.63 f
+  U927/Z (HS65_LL_IVX35)                                  0.02       0.65 r
+  U1045/Z (HS65_LL_IVX44)                                 0.02       0.67 f
+  U1571/Z (HS65_LL_NAND2X5)                               0.02       0.68 r
+  mac_result[1] (out)                                     0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[23]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[7]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[23]/CP (HS65_LL_DFPQX4)             0.00       0.00 r
+  mul_guarded_reg_reg[23]/Q (HS65_LL_DFPQX4)              0.09       0.09 f
+  U1567/Z (HS65_LL_AOI12X17)                              0.03       0.12 r
+  U925/Z (HS65_LL_BFX62)                                  0.04       0.16 r
+  U842/Z (HS65_LL_OAI22X17)                               0.02       0.18 f
+  U841/Z (HS65_LL_NOR2X19)                                0.03       0.21 r
+  U1321/Z (HS65_LL_NAND3X19)                              0.02       0.23 f
+  U845/Z (HS65_LL_XNOR2X35)                               0.05       0.28 r
+  U844/Z (HS65_LL_IVX27)                                  0.01       0.29 f
+  U1546/Z (HS65_LL_NAND2AX29)                             0.01       0.31 r
+  U914/Z (HS65_LL_IVX35)                                  0.01       0.32 f
+  U913/Z (HS65_LL_AOI21X35)                               0.02       0.34 r
+  U923/Z (HS65_LL_OAI21X24)                               0.02       0.36 f
+  U1213/Z (HS65_LL_AOI21X23)                              0.03       0.39 r
+  U1217/Z (HS65_LL_OAI21X24)                              0.02       0.41 f
+  U1255/Z (HS65_LL_AOI21X46)                              0.04       0.45 r
+  U556/Z (HS65_LL_OAI12X12)                               0.03       0.48 f
+  U2056/Z (HS65_LL_XNOR2X18)                              0.05       0.53 r
+  U1596/Z (HS65_LL_NAND2X29)                              0.02       0.55 f
+  U1597/Z (HS65_LL_NOR3X26)                               0.02       0.57 r
+  U1333/Z (HS65_LL_NAND4ABX25)                            0.03       0.60 f
+  U2062/Z (HS65_LL_NAND3X25)                              0.02       0.62 r
+  U1454/Z (HS65_LL_BFX53)                                 0.03       0.65 r
+  U1430/Z (HS65_LL_NAND2X7)                               0.02       0.67 f
+  U1431/Z (HS65_LL_NAND2X7)                               0.01       0.68 r
+  mac_result[7] (out)                                     0.00       0.68 r
+  data arrival time                                                  0.68
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.68
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[38]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U936/Z (HS65_LL_NAND2AX21)                              0.02       0.63 r
+  U930/Z (HS65_LL_NAND2X5)                                0.02       0.65 f
+  mac_result[38] (out)                                    0.00       0.65 f
+  data arrival time                                                  0.65
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[37]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U936/Z (HS65_LL_NAND2AX21)                              0.02       0.63 r
+  U929/Z (HS65_LL_NAND2X5)                                0.02       0.65 f
+  mac_result[37] (out)                                    0.00       0.65 f
+  data arrival time                                                  0.65
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[36]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U936/Z (HS65_LL_NAND2AX21)                              0.02       0.63 r
+  U932/Z (HS65_LL_NAND2X5)                                0.02       0.65 f
+  mac_result[36] (out)                                    0.00       0.65 f
+  data arrival time                                                  0.65
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[35]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U936/Z (HS65_LL_NAND2AX21)                              0.02       0.63 r
+  U931/Z (HS65_LL_NAND2X5)                                0.02       0.65 f
+  mac_result[35] (out)                                    0.00       0.65 f
+  data arrival time                                                  0.65
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[34]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U936/Z (HS65_LL_NAND2AX21)                              0.02       0.63 r
+  U928/Z (HS65_LL_NAND2X5)                                0.02       0.65 f
+  mac_result[34] (out)                                    0.00       0.65 f
+  data arrival time                                                  0.65
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[33]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U936/Z (HS65_LL_NAND2AX21)                              0.02       0.63 r
+  U935/Z (HS65_LL_NAND2X5)                                0.02       0.65 f
+  mac_result[33] (out)                                    0.00       0.65 f
+  data arrival time                                                  0.65
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[32]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U936/Z (HS65_LL_NAND2AX21)                              0.02       0.63 r
+  U934/Z (HS65_LL_NAND2X5)                                0.02       0.65 f
+  mac_result[32] (out)                                    0.00       0.65 f
+  data arrival time                                                  0.65
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[31]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U936/Z (HS65_LL_NAND2AX21)                              0.02       0.63 r
+  U933/Z (HS65_LL_NAND2X5)                                0.02       0.65 f
+  mac_result[31] (out)                                    0.00       0.65 f
+  data arrival time                                                  0.65
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: add_pos_overflow
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 r
+  U852/Z (HS65_LL_BFX9)                                   0.03       0.57 r
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.60 r
+  U1051/Z (HS65_LL_AND3X9)                                0.04       0.64 r
+  add_pos_overflow (out)                                  0.00       0.64 r
+  data arrival time                                                  0.64
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.64
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.04
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: add_neg_overflow
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  U1645/Z (HS65_LL_OAI13X4)                               0.02       0.63 r
+  add_neg_overflow (out)                                  0.00       0.63 r
+  data arrival time                                                  0.63
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: mul_guarded_reg_reg[33]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: mac_result[39]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[33]/CP (HS65_LL_DFPQX9)             0.00       0.00 r
+  mul_guarded_reg_reg[33]/Q (HS65_LL_DFPQX9)              0.09       0.09 f
+  U735/Z (HS65_LL_NAND2X29)                               0.03       0.12 r
+  U1370/Z (HS65_LL_NAND2AX29)                             0.02       0.14 f
+  U1303/Z (HS65_LL_BFX106)                                0.04       0.18 f
+  U813/Z (HS65_LL_NAND2X57)                               0.02       0.20 r
+  U866/Z (HS65_LL_IVX49)                                  0.02       0.21 f
+  U1436/Z (HS65_LL_NAND2AX21)                             0.01       0.23 r
+  U1266/Z (HS65_LL_OAI21X24)                              0.02       0.24 f
+  U596/Z (HS65_LL_NOR3X13)                                0.04       0.28 r
+  U583/Z (HS65_LL_XNOR2X27)                               0.06       0.34 f
+  U580/Z (HS65_LL_NOR2X38)                                0.03       0.37 r
+  U910/Z (HS65_LL_OA12X35)                                0.04       0.41 r
+  U1277/Z (HS65_LL_CBI4I1X21)                             0.03       0.44 f
+  U1695/Z (HS65_LL_AOI12X17)                              0.02       0.47 r
+  U1451/Z (HS65_LL_OAI21X12)                              0.02       0.49 f
+  U1317/Z (HS65_LL_XNOR2X35)                              0.05       0.54 f
+  U852/Z (HS65_LL_BFX9)                                   0.04       0.58 f
+  U528/Z (HS65_LL_BFX31)                                  0.03       0.61 f
+  mac_result[39] (out)                                    0.00       0.61 f
+  data arrival time                                                  0.61
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+  Startpoint: mul_guarded_reg_reg[24]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: scale_overflow
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mac_dp             area_8Kto9K           CORE65LPLVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  mul_guarded_reg_reg[24]/CP (HS65_LLS_DFPQX18)           0.00       0.00 r
+  mul_guarded_reg_reg[24]/Q (HS65_LLS_DFPQX18)            0.12       0.12 r
+  U752/Z (HS65_LL_AOI22X33)                               0.03       0.15 f
+  U763/Z (HS65_LL_BFX9)                                   0.04       0.19 f
+  U2038/Z (HS65_LL_NAND4ABX3)                             0.07       0.26 f
+  U2039/Z (HS65_LL_NOR4ABX2)                              0.05       0.31 r
+  U1117/Z (HS65_LL_NOR2AX3)                               0.06       0.37 r
+  U1102/Z (HS65_LL_NAND2X4)                               0.03       0.40 f
+  U2040/Z (HS65_LL_MUXI21X2)                              0.04       0.44 r
+  U1090/Z (HS65_LL_OAI12X2)                               0.03       0.47 f
+  scale_overflow (out)                                    0.00       0.47 f
+  data arrival time                                                  0.47
+
+  max_delay                                               0.60       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                 -0.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+1

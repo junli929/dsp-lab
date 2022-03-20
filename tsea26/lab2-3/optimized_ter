@@ -1,0 +1,372 @@
+mkdir -p rtl_synthesis
+cp util/dc_synthesize.tcl rtl_synthesis
+cp rtl/mac_dp.v* rtl_synthesis
+cp rtl/mac_scale.v rtl_synthesis
+cp rtl/saturation.v* rtl_synthesis
+cp rtl/senior_defines.vh rtl_synthesis
+cd rtl_synthesis;dc_shell -f dc_synthesize.tcl
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version P-2019.03-SP5 for linux64 - Oct 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+sh date
+Thu Feb 24 11:55:21 CET 2022
+# set some per design variables
+set TOPLEVEL  "mac_dp"
+mac_dp
+set target_library {/sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db}
+/sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db
+set link_library $target_library 
+/sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db
+proc dir_exists {name} {
+    if { [catch {set type [file type $name] } ]  } {
+	return 0;
+    } 
+    if { $type == "directory" } {
+	return 1;
+    }
+    return 0;
+
+}
+if {[dir_exists $TOPLEVEL.out]} {
+    sh rm -r ./$TOPLEVEL.out
+}
+sh mkdir ./$TOPLEVEL.out
+if [file exists mac_dp.v] {
+    analyze -format verilog mac_dp.v
+    analyze -format verilog saturation.v
+} else {
+    analyze -format vhdl mac_dp.vhd
+    analyze -format vhdl saturation.vhd
+}
+Running PRESTO HDLC
+Compiling Entity Declaration MAC_DP
+Compiling Architecture MAC_DP_RTL of MAC_DP
+Presto compilation completed successfully.
+Loading db file '/sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db'
+Running PRESTO HDLC
+Compiling Entity Declaration SATURATION
+Compiling Architecture SATURATION_RTL of SATURATION
+Presto compilation completed successfully.
+1
+analyze -format verilog mac_scale.v
+Running PRESTO HDLC
+Compiling source file ./mac_scale.v
+Opening include file senior_defines.vh
+Presto compilation completed successfully.
+1
+elaborate mac_dp
+Loading db file '/sw/synopsys/DC-P-2019.03-SP5/libraries/syn/gtech.db'
+Loading db file '/sw/synopsys/DC-P-2019.03-SP5/libraries/syn/standard.sldb'
+  Loading link library 'CORE65LPLVT'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 62 in file
+	'./mac_dp.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            64            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 120 in file
+	'./mac_dp.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           120            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 130 in file
+	'./mac_dp.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           130            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 151 in file
+	'./mac_dp.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           151            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 158 in file
+	'./mac_dp.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           158            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine mac_dp line 106 in file
+		'./mac_dp.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| mul_guarded_reg_reg | Flip-flop |  40   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mac_dp)
+Elaborated 1 design.
+Current design is now 'mac_dp'.
+Information: Building the design 'mac_scale'. (HDL-193)
+Warning:  ./mac_scale.v:19: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./mac_scale.v:22: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./mac_scale.v:27: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./mac_scale.v:28: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./mac_scale.v:29: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./mac_scale.v:32: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./mac_scale.v:35: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./mac_scale.v:38: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./mac_scale.v:41: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./mac_scale.v:44: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./mac_scale.v:45: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./mac_scale.v:46: signed to unsigned part selection occurs. (VER-318)
+
+Statistics for case statements in always block at line 14 in file
+	'./mac_scale.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            17            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (mac_scale)
+Information: Building the design 'saturation'. (HDL-193)
+Presto compilation completed successfully. (saturation)
+1
+# Set timing constaints, this says that a max of .6ns of delay from
+# input to output is alowable 
+set_max_delay .6 -to [all_outputs]
+1
+# If this was a clocked piece of logic we could set a clock
+#  period to shoot for like this 
+create_clock clk_i -period 2.000
+1
+# Check for warnings/errors 
+check_design
+1
+# This forces the compiler to spend as much effort (and time)
+# compiling this RTL to achieve timing possible. 
+compile_ultra
+Loading db file '/sw/synopsys/DC-P-2019.03-SP5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | P-2019.03-DWBB_201903.4 |     *     |
+| Licensed DW Building Blocks        | P-2019.03-DWBB_201903.4 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'mac_dp'
+
+Loaded alib file './alib-52/CORE65LPLVT_nom_1.20V_25C.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy scaling before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy sat_box before Pass 1 (OPT-776)
+Information: Ungrouping 2 of 3 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mac_dp'
+ Implement Synthetic for 'mac_dp'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: In design 'mac_dp', the register 'mul_guarded_reg_reg[34]' is removed because it is merged to 'mul_guarded_reg_reg[33]'. (OPT-1215)
+Information: In design 'mac_dp', the register 'mul_guarded_reg_reg[35]' is removed because it is merged to 'mul_guarded_reg_reg[33]'. (OPT-1215)
+Information: In design 'mac_dp', the register 'mul_guarded_reg_reg[36]' is removed because it is merged to 'mul_guarded_reg_reg[33]'. (OPT-1215)
+Information: In design 'mac_dp', the register 'mul_guarded_reg_reg[37]' is removed because it is merged to 'mul_guarded_reg_reg[33]'. (OPT-1215)
+Information: In design 'mac_dp', the register 'mul_guarded_reg_reg[38]' is removed because it is merged to 'mul_guarded_reg_reg[33]'. (OPT-1215)
+Information: In design 'mac_dp', the register 'mul_guarded_reg_reg[39]' is removed because it is merged to 'mul_guarded_reg_reg[33]'. (OPT-1215)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'mac_dp'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Mapping 'mac_dp_DP_OP_39J1_122_1610_3'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:17    6444.4      0.32      24.5       6.1                              0.0057
+    0:00:20    7228.5      0.16      12.1      32.1                              0.0075
+    0:00:20    7228.5      0.16      12.1      32.1                              0.0075
+    0:00:20    7228.5      0.16      12.1      32.1                              0.0075
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:21    7086.0      0.15      10.6      32.1                              0.0074
+    0:00:22    7089.7      0.15      10.5      31.1                              0.0070
+    0:00:22    7089.7      0.15      10.5      31.1                              0.0070
+    0:00:27    7410.0      0.15      10.4      29.1                              0.0076
+    0:00:27    7410.0      0.15      10.4      29.1                              0.0076
+    0:00:27    7479.7      0.14       9.9      29.1                              0.0078
+    0:00:27    7479.7      0.14       9.9      29.1                              0.0078
+    0:00:31    7558.2      0.14       9.9      30.1                              0.0080
+    0:00:31    7558.2      0.14       9.9      30.1                              0.0080
+    0:00:38    8317.4      0.13       9.1      31.1                              0.0097
+    0:00:38    8317.4      0.13       9.1      31.1                              0.0097
+    0:00:40    8330.9      0.12       9.0      31.1                              0.0097
+    0:00:40    8330.9      0.12       9.0      31.1                              0.0097
+    0:00:47    8922.7      0.11       8.1      29.1                              0.0110
+    0:00:47    8922.7      0.11       8.1      29.1                              0.0110
+    0:00:48    8922.7      0.11       8.1      29.1                              0.0110
+    0:00:48    8922.7      0.11       8.1      29.1                              0.0110
+    0:00:52    9043.3      0.11       8.0      28.1                              0.0113
+    0:00:52    9043.3      0.11       8.0      28.1                              0.0113
+    0:00:54    9014.7      0.11       7.9      28.1                              0.0112
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:54    9014.7      0.11       7.9      28.1                              0.0112
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:00:56    8857.2      0.11       7.9       0.0 net11161                     0.0109
+    0:00:57    8860.8      0.11       7.9       0.0                              0.0109
+    0:00:58    8885.2      0.11       8.0       0.0                              0.0109
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:58    8885.2      0.11       8.0       0.0                              0.0109
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+    0:01:01    8024.6      0.12       8.5       0.0                              0.0091
+    0:01:02    8161.9      0.12       8.6       0.0                              0.0093
+    0:01:02    8161.9      0.12       8.6       0.0                              0.0093
+    0:01:03    8141.1      0.12       8.6       0.0                              0.0093
+    0:01:03    8141.1      0.12       8.6       0.0                              0.0093
+    0:01:04    8141.1      0.12       8.6       0.0                              0.0093
+    0:01:04    8141.1      0.12       8.6       0.0                              0.0093
+    0:01:04    8186.4      0.11       8.4       0.0                              0.0094
+    0:01:04    8186.4      0.11       8.4       0.0                              0.0094
+    0:01:06    8179.1      0.11       8.4       0.0                              0.0094
+    0:01:06    8179.1      0.11       8.4       0.0                              0.0094
+    0:01:10    8684.5      0.11       7.7       0.0                              0.0105
+    0:01:10    8684.5      0.11       7.7       0.0                              0.0105
+    0:01:17    8931.5      0.12       9.1       0.0                              0.0111
+    0:01:17    8931.5      0.12       9.1       0.0                              0.0111
+    0:01:22    9411.5      0.11       7.9       2.0                              0.0122
+    0:01:22    9411.5      0.11       7.9       2.0                              0.0122
+    0:01:23    9424.5      0.10       7.5       3.0                              0.0122
+    0:01:23    9424.5      0.10       7.5       3.0                              0.0122
+    0:01:26    9563.3      0.10       7.2       2.0                              0.0126
+    0:01:26    9563.3      0.10       7.2       2.0                              0.0126
+    0:01:27    9563.3      0.10       7.2       2.0                              0.0126
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:27    9563.3      0.10       7.3       2.0                              0.0126
+    0:01:28    9070.9      0.11       7.6       1.0                              0.0112
+    0:01:28    9066.2      0.10       7.2       1.0                              0.0112
+    0:01:28    9066.2      0.10       7.2       1.0                              0.0112
+    0:01:29    9066.7      0.10       7.2       1.0                              0.0112
+    0:01:31    8979.4      0.10       6.6       0.0                              0.0110
+    0:01:34    9139.0      0.09       6.6       0.0                              0.0114
+    0:01:34    9126.5      0.09       6.5       0.0                              0.0114
+    0:01:34    9135.4      0.09       6.4       0.0                              0.0114
+    0:01:35    8779.2      0.09       6.3       0.0                              0.0105
+Loading db file '/sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db'

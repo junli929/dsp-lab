@@ -1,0 +1,71 @@
+-bash-4.2$ make test
+srasm sad.asm
+Senior assembler (V2015-TSEA26-02)
+Assembled successfully into 'sad.hex'
+./sim sad.hex
+Stopping simulation due to write to port 0x13
+Stopped after a total of 46555528 cycles
+
+
+
+-bash-4.2$ make prof_report
+sed -n '/code/,/rom0/p' < sad.hex |grep ' '|awk '{print $3 ":" $2 " "}'> prof_tmp.txt
+paste prof_tmp.txt profile.txt | grep :
+sad.asm:51 	4
+sad.asm:52 	1
+sad.asm:54 	1
+sad.asm:55 	0
+sad.asm:56 	0
+sad.asm:57 	0
+sad.asm:71 	1
+sad.asm:72 	1
+sad.asm:73 	1
+sad.asm:74 	1
+sad.asm:77 	1008
+sad.asm:78 	4032
+sad.asm:80 	1008
+sad.asm:82 	1008
+sad.asm:83 	1008
+sad.asm:84 	1008
+sad.asm:85 	3948
+sad.asm:88 	28
+sad.asm:89 	28
+sad.asm:90 	28
+sad.asm:91 	28
+sad.asm:92 	109
+sad.asm:94 	4
+sad.asm:124 	1008
+sad.asm:125 	1008
+sad.asm:126 	1008
+sad.asm:131 	1008
+sad.asm:133 	1008
+sad.asm:134 	1008
+sad.asm:135 	1008
+sad.asm:136 	1008
+sad.asm:138 	1008
+sad.asm:139 	1008
+sad.asm:141 	1008
+sad.asm:142 	1008
+sad.asm:145 	1097712
+sad.asm:147 	1097712
+sad.asm:151 	1097712
+sad.asm:152 	1097712
+sad.asm:153 	1097712
+sad.asm:156 	7097476
+sad.asm:157 	7097476
+sad.asm:166 	7097476
+sad.asm:169 	1097712
+sad.asm:170 	1097712
+sad.asm:171 	1097712
+sad.asm:173 	1097712
+sad.asm:174 	4358943
+sad.asm:177 	10635
+sad.asm:178 	10635
+sad.asm:182 	1097712
+sad.asm:183 	1097712
+sad.asm:184 	1097712
+sad.asm:185 	1097712
+sad.asm:187 	1097712
+sad.asm:188 	1097712
+sad.asm:189 	4387824
+sad.asm:192 	4032

@@ -1,0 +1,92 @@
+ 
+****************************************
+Report : design
+Design : mac_dp
+Version: P-2019.03-SP5
+Date   : Thu Feb 24 11:58:10 2022
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    CORE65LPLVT (File: /sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db)
+
+Local Link Library:
+
+    {/sw/cadence/libraries/cmos065_522/CORE65LPLVT_5.1/libs/CORE65LPLVT_nom_1.20V_25C.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : nom_1.20V_25C
+    Library : CORE65LPLVT
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   area_8Kto9K
+Location       :   CORE65LPLVT
+Resistance     :   5.82357
+Capacitance    :   0.8
+Area           :   0
+Slope          :   0.0010446
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.00
+     2     0.00
+     3     0.00
+     4     0.00
+     5     0.01
+     6     0.01
+     7     0.01
+     8     0.01
+     9     0.01
+    10     0.01
+    11     0.01
+    12     0.01
+    13     0.01
+    14     0.01
+    15     0.02
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1
